@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="editor.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Blog Here</h1>
+  <div class="blog">
+    <input type="text" id="imageURL" class="image-url" placeholder="Image URL...">
+    <textarea id="blogTitle" name="blogTitle" type="text" class="title" placeholder="Blog title..."></textarea>
+  
+    <textarea id="articleContent" name="articleContent" type="text" class="article"
+      placeholder="Start writing here..."></textarea>
+      <div class="blog-options">
+        <button class="publish-btn" href="home.html">publish</button>
+      </div>
+  </div>
+  
+
+ 
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+  <script src="editor.js"></script>
+</body>
+
+</html>

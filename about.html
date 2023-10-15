@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+        /* Reset some default styles */
+        .navbar {
+    background-color: #333;
+    height: 40px;
+    color: white;
+    padding: 5px ;
+    position: fixed; /* Stick the navigation bar to the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 36px;
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+a:hover {
+    color: orangered; /* Change color on hover */
+}
+
+/* Style the navigation links */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Responsive design - adjust as needed */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav">
+                <i class="icon" style="color: orangered;">B</i>
+                <a href="#">loggerr</a>
+            </div>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="editor.html">EDITOR</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <footer>
+        <!-- Add your website footer here -->
+    </footer>
+</body>
+</html>

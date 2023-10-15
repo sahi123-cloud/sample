@@ -1,0 +1,201 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar */
+/* Style the navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Stick the navigation bar to the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 36px;
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+a:hover {
+    color: orangered; /* Change color on hover */
+}
+
+/* Style the navigation links */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Responsive design - adjust as needed */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px 0;
+    color: #FF4500;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Additional styles */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframe animation for the hero text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1, .hero p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Style the "Latest Of Our Blogs" section */
+
+/* Style the "Latest Of Our Blogs" section */
+.d2 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    height: 30px;
+}
+.d2:hover{
+    color: orangered;
+}
+
+/* Style the blogs section */
+.blogs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.blog-card {
+    max-width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    height: 420px;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-overview {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+img{
+    width: 100%;
+    height: 120px;
+}
